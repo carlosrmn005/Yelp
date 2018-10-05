@@ -2,7 +2,7 @@
 
 **Yelp** is a Yelp search app using the [Yelp API](http://www.yelp.com/developers/documentation/v2/search_api).
 
-Time spent: **6** hours spent in total
+Time spent: **7** hours spent in total
 
 ## User Stories
 
@@ -31,7 +31,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://imgur.com/FPL27lW' title='Yelp Demo' width=332'' alt='Yelp Demo' />
+<img src='https://imgur.com/FPL27lW.gif' title='Yelp Demo' width=332'' alt='Yelp Demo' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 

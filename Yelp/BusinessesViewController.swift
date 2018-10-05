@@ -8,9 +8,10 @@
 
 import UIKit
 
-class BusinessesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class BusinessesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     
     var businesses: [Business]!
+    let searchBar = UISearchBar()
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -22,6 +23,9 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
         tableView.dataSource = self
         tableView.rowHeight = UITableViewAutomaticDimension
         
+        searchBar.sizeToFit()
+        
+        navigationItem.titleView = searchBar
         
         //tableView.estimatedRowHeight = 120
         
@@ -79,6 +83,10 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
         return cell
     }
     
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView)
+    {
+        searchBar.endEditing(true)
+    }
     /*
      // MARK: - Navigation
      
